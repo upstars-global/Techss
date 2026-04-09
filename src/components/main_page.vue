@@ -38,25 +38,37 @@
     </div>
     <a
       href="#section2"
-      @click="move_out_menu(); main_page()"
+      @click="
+        move_out_menu()
+        main_page()
+      "
     >
       <div class="menu_element">About</div>
     </a>
     <a
       href="#section3"
-      @click="move_out_menu(); main_page()"
+      @click="
+        move_out_menu()
+        main_page()
+      "
     >
       <div class="menu_element">Advantages</div>
     </a>
     <a
       href="#section5"
-      @click="move_out_menu(); main_page()"
+      @click="
+        move_out_menu()
+        main_page()
+      "
     >
       <div class="menu_element">Services</div>
     </a>
     <a
       href="#section6"
-      @click="move_out_menu(); main_page()"
+      @click="
+        move_out_menu()
+        main_page()
+      "
     >
       <div class="menu_element">Vacancy</div>
     </a>
