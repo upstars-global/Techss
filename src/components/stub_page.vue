@@ -1,55 +1,50 @@
 <template>
-
-
   <div class="sections_wrapper">
-    <v-lazy-image :src="center_balls" class="center_balls_stub" alt=""/>
+    <v-lazy-image :src="center_balls" class="center_balls_stub" alt="" />
     <div id="stub_page">
       <div class="stub_main_text">
-        The site is temporarily unavailable <br> due to undergoing maintenance <br> and improvements.
+        The site is temporarily unavailable <br />
+        due to undergoing maintenance <br />
+        and improvements.
       </div>
       <div class="stub_secondery_text">
-        We're working to make your visit here even more enjoyable and convenient. We apologize for any inconvenience and thank you for your patience.
-        Stay tuned for updates on our site and stay connected!
+        We're working to make your visit here even more enjoyable and convenient. We apologize for
+        any inconvenience and thank you for your patience. Stay tuned for updates on our site and
+        stay connected!
       </div>
-
-
-
     </div>
-
-
   </div>
 </template>
 
 <script>
-import VLazyImage from 'v-lazy-image';
-import logoSrc from '@/assets/img/logo.svg';
-import hamburger_menu from '@/assets/img/hamburger_menu.svg';
-import top_balls from '@/assets/img/balls/top_balls.webp';
-import center_balls from '@/assets/img/ball_anim.svg';
-import bottom_blured_ball from '@/assets/img/balls/bootom_blured_ball.webp';
-import ball4 from '@/assets/img/balls/ball4.webp';
-import ball5 from '@/assets/img/balls/ball5.webp';
-import ball6 from '@/assets/img/balls/ball6.webp';
-import ball7 from '@/assets/img/balls/ball7.webp';
-import button1 from '@/assets/img/button1.svg';
-import logo_element from '@/assets/img/logo_element.svg';
-import serv1 from '@/assets/img/services/serv1.webp';
-import serv2 from '@/assets/img/services/serv2.webp';
-import serv3 from '@/assets/img/services/serv3.webp';
-import serv4 from '@/assets/img/services/serv4.webp';
-import serv5 from '@/assets/img/services/serv5.webp';
-import serv6 from '@/assets/img/services/serv6.webp';
-import exp1 from '@/assets/img/sect4/exp1.webp';
-import exp2 from '@/assets/img/sect4/exp2.webp';
-import exp3 from '@/assets/img/sect4/exp3.webp';
-import srvices from '@/assets/img/srvices.svg';
-import pos1 from '@/assets/img/positions/pos1.webp';
-import pos2 from '@/assets/img/positions/pos2.webp';
-import pos3 from '@/assets/img/positions/pos3.webp';
-import selector from '@/assets/img/selector.svg';
-import close from '@/assets/img/close.svg';
-import serv_mobile from '@/assets/img/srvices_mobile.svg';
-
+import VLazyImage from 'v-lazy-image'
+import logoSrc from '@/assets/img/logo.svg'
+import hamburger_menu from '@/assets/img/hamburger_menu.svg'
+import top_balls from '@/assets/img/balls/top_balls.webp'
+import center_balls from '@/assets/img/ball_anim.svg'
+import bottom_blured_ball from '@/assets/img/balls/bootom_blured_ball.webp'
+import ball4 from '@/assets/img/balls/ball4.webp'
+import ball5 from '@/assets/img/balls/ball5.webp'
+import ball6 from '@/assets/img/balls/ball6.webp'
+import ball7 from '@/assets/img/balls/ball7.webp'
+import button1 from '@/assets/img/button1.svg'
+import logo_element from '@/assets/img/logo_element.svg'
+import serv1 from '@/assets/img/services/serv1.webp'
+import serv2 from '@/assets/img/services/serv2.webp'
+import serv3 from '@/assets/img/services/serv3.webp'
+import serv4 from '@/assets/img/services/serv4.webp'
+import serv5 from '@/assets/img/services/serv5.webp'
+import serv6 from '@/assets/img/services/serv6.webp'
+import exp1 from '@/assets/img/sect4/exp1.webp'
+import exp2 from '@/assets/img/sect4/exp2.webp'
+import exp3 from '@/assets/img/sect4/exp3.webp'
+import srvices from '@/assets/img/srvices.svg'
+import pos1 from '@/assets/img/positions/pos1.webp'
+import pos2 from '@/assets/img/positions/pos2.webp'
+import pos3 from '@/assets/img/positions/pos3.webp'
+import selector from '@/assets/img/selector.svg'
+import close from '@/assets/img/close.svg'
+import serv_mobile from '@/assets/img/srvices_mobile.svg'
 
 export default {
   components: {
@@ -84,33 +79,33 @@ export default {
       selector,
       close,
       serv_mobile,
-    };
+    }
   },
   methods: {
     move_in_menu() {
-      document.getElementById('menu_elements_mobile').classList.remove("move_out_menu");
-      document.getElementById('menu_elements_mobile').classList.add("move_in_menu");
+      document.getElementById('menu_elements_mobile').classList.remove('move_out_menu')
+      document.getElementById('menu_elements_mobile').classList.add('move_in_menu')
     },
     move_out_menu() {
-      document.getElementById('menu_elements_mobile').classList.remove("move_in_menu");
-      document.getElementById('menu_elements_mobile').classList.add("move_out_menu");
+      document.getElementById('menu_elements_mobile').classList.remove('move_in_menu')
+      document.getElementById('menu_elements_mobile').classList.add('move_out_menu')
     },
     main_page() {
-      document.getElementById('main_page').style.display = "block";
-      document.getElementById('privacy').style.display = "none";
-      document.getElementById('cokie_page').style.display = "none";
+      document.getElementById('main_page').style.display = 'block'
+      document.getElementById('privacy').style.display = 'none'
+      document.getElementById('cokie_page').style.display = 'none'
     },
     privacy() {
-      document.getElementById('main_page').style.display = "none";
-      document.getElementById('privacy').style.display = "block";
-      document.getElementById('cokie_page').style.display = "none";
+      document.getElementById('main_page').style.display = 'none'
+      document.getElementById('privacy').style.display = 'block'
+      document.getElementById('cokie_page').style.display = 'none'
     },
     cookies() {
-      document.getElementById('main_page').style.display = "none";
-      document.getElementById('privacy').style.display = "none";
-      document.getElementById('cokie_page').style.display = "block";
+      document.getElementById('main_page').style.display = 'none'
+      document.getElementById('privacy').style.display = 'none'
+      document.getElementById('cokie_page').style.display = 'block'
     },
-  }
+  },
 }
 </script>
 
@@ -573,7 +568,7 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  top: 67rem;
+  margin-top 67rem;
 
 a
   text-decoration none
@@ -814,6 +809,4 @@ a
     display none
   .section1_margin1
     max-width 320rem
-
-
 </style>

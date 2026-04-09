@@ -2,43 +2,62 @@
   <div class="top_menu">
     <div class="top_menu_content">
       <a href="#section1">
-        <v-lazy-image :src="logoSrc" class="logoSrc_img" @click='main_page' alt="TECHSS"/>
+        <v-lazy-image :src="logoSrc" class="logoSrc_img" @click="main_page" alt="TECHSS" />
       </a>
-      <v-lazy-image :src="hamburger_menu" @click="move_in_menu()" class="hamburger_menu" alt="menu"/>
+      <v-lazy-image
+        :src="hamburger_menu"
+        @click="move_in_menu()"
+        class="hamburger_menu"
+        alt="menu"
+      />
       <div class="menu_elements">
-        <a href="#section2" @click='main_page'>
+        <a href="#section2" @click="main_page">
           <div class="menu_element">About</div>
         </a>
-        <a href="#section3" @click='main_page'>
+        <a href="#section3" @click="main_page">
           <div class="menu_element">Advantages</div>
         </a>
-        <a href="#section5" @click='main_page'>
+        <a href="#section5" @click="main_page">
           <div class="menu_element">Services</div>
         </a>
-        <a href="#section6" @click='main_page'>
+        <a href="#section6" @click="main_page">
           <div class="menu_element">Vacancy</div>
         </a>
-        <div class="menu_element">EN
-          <img :src="selector" class="selector" alt="">
+        <div class="menu_element">
+          EN
+          <img :src="selector" class="selector" alt="" />
         </div>
       </div>
     </div>
   </div>
   <div id="menu_elements_mobile" class="menu_elements_mobile">
-    <img :src="close" @click="move_out_menu()" class="close" alt="">
-    <div class="menu_element" style="margin-bottom: 40rem">EN
-      <img :src="selector" class="selector" alt="">
+    <img :src="close" @click="move_out_menu()" class="close" alt="" />
+    <div class="menu_element" style="margin-bottom: 40rem">
+      EN
+      <img :src="selector" class="selector" alt="" />
     </div>
-    <a href="#section2" @click="move_out_menu(); main_page()">
+    <a
+      href="#section2"
+      @click="move_out_menu(); main_page()"
+    >
       <div class="menu_element">About</div>
     </a>
-    <a href="#section3" @click="move_out_menu(); main_page()">
+    <a
+      href="#section3"
+      @click="move_out_menu(); main_page()"
+    >
       <div class="menu_element">Advantages</div>
     </a>
-    <a href="#section5" @click="move_out_menu(); main_page()">
+    <a
+      href="#section5"
+      @click="move_out_menu(); main_page()"
+    >
       <div class="menu_element">Services</div>
     </a>
-    <a href="#section6" @click="move_out_menu(); main_page()">
+    <a
+      href="#section6"
+      @click="move_out_menu(); main_page()"
+    >
       <div class="menu_element">Vacancy</div>
     </a>
   </div>
@@ -46,24 +65,28 @@
   <div class="sections_wrapper">
     <div id="main_page">
       <div class="ball_container">
-        <v-lazy-image :src="top_balls" class="top_balls" alt=""/>
-        <v-lazy-image :src="center_balls" class="center_balls" alt=""/>
-        <v-lazy-image :src="bottom_blured_ball" class="bottom_blured_ball" alt=""/>
-        <v-lazy-image :src="ball4" class="ball4" alt=""/>
-        <v-lazy-image :src="ball5" class="ball5" alt=""/>
-        <v-lazy-image :src="ball6" class="ball6" alt=""/>
-        <v-lazy-image :src="ball7" class="ball7" alt=""/>
-        <v-lazy-image :src="center_balls" class="bottom_center_balls" alt=""/>
+        <v-lazy-image :src="top_balls" class="top_balls" alt="" />
+        <v-lazy-image :src="center_balls" class="center_balls" alt="" />
+        <v-lazy-image :src="bottom_blured_ball" class="bottom_blured_ball" alt="" />
+        <v-lazy-image :src="ball4" class="ball4" alt="" />
+        <v-lazy-image :src="ball5" class="ball5" alt="" />
+        <v-lazy-image :src="ball6" class="ball6" alt="" />
+        <v-lazy-image :src="ball7" class="ball7" alt="" />
+        <v-lazy-image :src="center_balls" class="bottom_center_balls" alt="" />
       </div>
 
       <div id="section1" class="section">
         <div class="section_content">
-          <div class="h1 section1_margin">Your Center of <br> Digital Excellence</div>
-          <div class="h4 section1_margin1">The Top-Notch Software DevOps and Digital <br class="br_desktop"> Marketing Solutions from
-            Techss
+          <div class="h1 section1_margin">
+            Your Center of <br />
+            Digital Excellence
+          </div>
+          <div class="h4 section1_margin1">
+            The Top-Notch Software DevOps and Digital <br class="br_desktop" />
+            Marketing Solutions from Techss
           </div>
           <a href="mailto:info@techss.com">
-            <img :src="button1" class="button1 section1_margin2" alt="">
+            <img :src="button1" class="button1 section1_margin2" alt="" />
           </a>
         </div>
       </div>
@@ -72,17 +95,16 @@
         <div class="section_content">
           <div class="h1 section2_center">Who we are</div>
           <div class="section_2_text_content">
-            <v-lazy-image :src="logo_element" class="logo_element" alt=""/>
-            <div class="h4 section2_margin1">Techss is an always-ready software development helping hand, dedicated to
-              all
-              sizes and fields of businesses.
-              <br> <span class="brlarge"></span>
-              For over half of decade, our team of seasoned experts has partnered with businesses
-              to unlock their full potential and achieve their goals. <br> <span class="brlarge"></span>
-              We employ innovative technologies to design and execute effective marketing campaigns that produce
-              tangible
-              results for our clients, including increased leads
-              and sales.
+            <v-lazy-image :src="logo_element" class="logo_element" alt="" />
+            <div class="h4 section2_margin1">
+              Techss is an always-ready software development helping hand, dedicated to all sizes
+              and fields of businesses. <br />
+              <span class="brlarge"></span> For over half of decade, our team of seasoned experts
+              has partnered with businesses to unlock their full potential and achieve their goals.
+              <br />
+              <span class="brlarge"></span>
+              We employ innovative technologies to design and execute effective marketing campaigns
+              that produce tangible results for our clients, including increased leads and sales.
             </div>
           </div>
         </div>
@@ -91,13 +113,12 @@
         <div class="section_content">
           <div class="h1 section2_center">Why TECHSS</div>
           <div class="section_3_text_content">
-            <v-lazy-image :src="serv1" class="serv" alt=""/>
-            <v-lazy-image :src="serv2" class="serv" alt=""/>
-            <v-lazy-image :src="serv3" class="serv" alt=""/>
-            <v-lazy-image :src="serv4" class="serv" alt=""/>
-            <v-lazy-image :src="serv5" class="serv" alt=""/>
-            <v-lazy-image :src="serv6" class="serv" alt=""/>
-
+            <v-lazy-image :src="serv1" class="serv" alt="" />
+            <v-lazy-image :src="serv2" class="serv" alt="" />
+            <v-lazy-image :src="serv3" class="serv" alt="" />
+            <v-lazy-image :src="serv4" class="serv" alt="" />
+            <v-lazy-image :src="serv5" class="serv" alt="" />
+            <v-lazy-image :src="serv6" class="serv" alt="" />
           </div>
         </div>
       </div>
@@ -106,55 +127,52 @@
           <div class="h1 section4_center" style="color: white">Domains of expertise</div>
           <div class="section_4_text_content">
             <div class="section4_row">
-              <v-lazy-image :src="exp1" class="exp" alt=""/>
+              <v-lazy-image :src="exp1" class="exp" alt="" />
               <div class="mobile_row">
                 <div class="s4header">Create a Robust Social Media Presence</div>
-                <div class="s4text">Robust social media presence that is tailored to your target audience. Our experts
-                  will
-                  help you make the most of your social media efforts, so you can drive engagement, boost conversions,
-                  and
-                  grow your business.
+                <div class="s4text">
+                  Robust social media presence that is tailored to your target audience. Our experts
+                  will help you make the most of your social media efforts, so you can drive
+                  engagement, boost conversions, and grow your business.
                 </div>
               </div>
-
             </div>
             <div class="section4_row">
-              <v-lazy-image :src="exp2" class="exp" alt=""/>
+              <v-lazy-image :src="exp2" class="exp" alt="" />
               <div class="mobile_row">
                 <div class="s4header">Optimize Your Website for Search Engines</div>
-                <div class="s4text">We use innovative strategies to optimize your website for search engines so you can
-                  get
-                  found online. Our team of experts uses the latest SEO techniques to increase your website's visibility
-                  and
-                  improve its ranking on Google.
+                <div class="s4text">
+                  We use innovative strategies to optimize your website for search engines so you
+                  can get found online. Our team of experts uses the latest SEO techniques to
+                  increase your website's visibility and improve its ranking on Google.
                 </div>
               </div>
-
             </div>
             <div class="section4_row">
-              <v-lazy-image :src="exp3" class="exp" alt=""/>
+              <v-lazy-image :src="exp3" class="exp" alt="" />
               <div class="mobile_row">
                 <div class="s4header">Deliver Outstanding User Experience</div>
-                <div class="s4text">We have an experienced dev team. We can realize any software desire from the web to
-                  cross-platform applications. Our dev team leverages the most effective frameworks, such as Express and
-                  Rails, and the most -in-demand languages, such as JavaScript, Ruby and C++.
+                <div class="s4text">
+                  We have an experienced dev team. We can realize any software desire from the web
+                  to cross-platform applications. Our dev team leverages the most effective
+                  frameworks, such as Express and Rails, and the most -in-demand languages, such as
+                  JavaScript, Ruby and C++.
                 </div>
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
       <div id="section5" class="section">
         <div class="section_content">
           <div class="h1 section5_center">Our services</div>
-          <div class="s5text">When it comes to business scaling, convenient and intuitive software is paramount. Our
-            team leverages AI, ML, and blockchain development to ensure your software covers all your needs.
+          <div class="s5text">
+            When it comes to business scaling, convenient and intuitive software is paramount. Our
+            team leverages AI, ML, and blockchain development to ensure your software covers all
+            your needs.
           </div>
-          <v-lazy-image :src="srvices" class="srvices" alt=""/>
-          <v-lazy-image :src="serv_mobile" class="srvices_mobile" alt=""/>
-
+          <v-lazy-image :src="srvices" class="srvices" alt="" />
+          <v-lazy-image :src="serv_mobile" class="srvices_mobile" alt="" />
         </div>
       </div>
       <div id="section6" class="section">
@@ -162,49 +180,38 @@
           <div class="h1 section5_center">Open positions</div>
           <div class="positions_row">
             <a href="mailto:info@techss.com">
-              <v-lazy-image :src="pos1" class="pos" alt=""/>
+              <v-lazy-image :src="pos1" class="pos" alt="" />
             </a>
             <a href="mailto:info@techss.com">
-              <v-lazy-image :src="pos2" class="pos" alt=""/>
+              <v-lazy-image :src="pos2" class="pos" alt="" />
             </a>
             <a href="mailto:info@techss.com">
-              <v-lazy-image :src="pos3" class="pos" alt=""/>
+              <v-lazy-image :src="pos3" class="pos" alt="" />
             </a>
           </div>
           <div class="divider"></div>
-
-
         </div>
       </div>
       <div id="section7" class="section">
-        <v-lazy-image :src="center_balls" class="center_balls_mobile" alt=""/>
+        <v-lazy-image :src="center_balls" class="center_balls_mobile" alt="" />
         <div class="section_content">
-          <div class="h1 section7_width">Run a tight ship, and Techss
-            will component the rest
-          </div>
+          <div class="h1 section7_width">Run a tight ship, and Techss will component the rest</div>
           <a href="mailto:info@techss.com">
-            <img :src="button1" class="button1 section7_margin1" alt="">
+            <img :src="button1" class="button1 section7_margin1" alt="" />
           </a>
-
         </div>
       </div>
     </div>
     <div id="privacy" style="display: none">
-
-      <privacy_page/>
-
+      <privacy_page />
     </div>
     <div id="cokie_page" style="display: none">
-
-      <Cokie_page/>
-
+      <Cokie_page />
     </div>
     <div id="terms_page" style="display: none">
-
-      <terms_page/>
-
+      <terms_page />
     </div>
-    <div id="section8" class="section">
+    <footer id="section8" class="section">
       <div class="section_content">
         <div class="footer_elements">
           <div class="h3">Contacts: <a href="mailto:info@techss.com">info@techss.com </a></div>
@@ -212,43 +219,51 @@
           <div @click="cookies()" class="h3"><a href="#cokie_page">Cookies</a></div>
           <div @click="terms()" class="h3"><a href="#terms_page">Terms & Conditions</a></div>
         </div>
+        <div class="footer_legal">
+          <p class="footer_legal__line">2026 Techss Limited. All rights reserved.</p>
+          <p class="footer_legal__line">Techss Limited</p>
+          <p class="footer_legal__line">
+            Registered address: 306, Victoria House, Victoria, Mahe, Seychelles
+          </p>
+          <p class="footer_legal__line">Company registration number: 242334</p>
+        </div>
       </div>
-    </div>
+    </footer>
   </div>
 </template>
 
 <script>
-import VLazyImage from 'v-lazy-image';
-import logoSrc from '@/assets/img/logo.svg';
-import hamburger_menu from '@/assets/img/hamburger_menu.svg';
-import top_balls from '@/assets/img/balls/top_balls.webp';
-import center_balls from '@/assets/img/ball_anim.svg';
-import bottom_blured_ball from '@/assets/img/balls/bootom_blured_ball.webp';
-import ball4 from '@/assets/img/balls/ball4.webp';
-import ball5 from '@/assets/img/balls/ball5.webp';
-import ball6 from '@/assets/img/balls/ball6.webp';
-import ball7 from '@/assets/img/balls/ball7.webp';
-import button1 from '@/assets/img/button1.svg';
-import logo_element from '@/assets/img/logo_element.svg';
-import serv1 from '@/assets/img/services/serv1.webp';
-import serv2 from '@/assets/img/services/serv2.webp';
-import serv3 from '@/assets/img/services/serv3.webp';
-import serv4 from '@/assets/img/services/serv4.webp';
-import serv5 from '@/assets/img/services/serv5.webp';
-import serv6 from '@/assets/img/services/serv6.webp';
-import exp1 from '@/assets/img/sect4/exp1.webp';
-import exp2 from '@/assets/img/sect4/exp2.webp';
-import exp3 from '@/assets/img/sect4/exp3.webp';
-import srvices from '@/assets/img/srvices.svg';
-import pos1 from '@/assets/img/positions/pos1.webp';
-import pos2 from '@/assets/img/positions/pos2.webp';
-import pos3 from '@/assets/img/positions/pos3.webp';
-import selector from '@/assets/img/selector.svg';
-import close from '@/assets/img/close.svg';
-import serv_mobile from '@/assets/img/srvices_mobile.svg';
+import VLazyImage from 'v-lazy-image'
+import logoSrc from '@/assets/img/logo.svg'
+import hamburger_menu from '@/assets/img/hamburger_menu.svg'
+import top_balls from '@/assets/img/balls/top_balls.webp'
+import center_balls from '@/assets/img/ball_anim.svg'
+import bottom_blured_ball from '@/assets/img/balls/bootom_blured_ball.webp'
+import ball4 from '@/assets/img/balls/ball4.webp'
+import ball5 from '@/assets/img/balls/ball5.webp'
+import ball6 from '@/assets/img/balls/ball6.webp'
+import ball7 from '@/assets/img/balls/ball7.webp'
+import button1 from '@/assets/img/button1.svg'
+import logo_element from '@/assets/img/logo_element.svg'
+import serv1 from '@/assets/img/services/serv1.webp'
+import serv2 from '@/assets/img/services/serv2.webp'
+import serv3 from '@/assets/img/services/serv3.webp'
+import serv4 from '@/assets/img/services/serv4.webp'
+import serv5 from '@/assets/img/services/serv5.webp'
+import serv6 from '@/assets/img/services/serv6.webp'
+import exp1 from '@/assets/img/sect4/exp1.webp'
+import exp2 from '@/assets/img/sect4/exp2.webp'
+import exp3 from '@/assets/img/sect4/exp3.webp'
+import srvices from '@/assets/img/srvices.svg'
+import pos1 from '@/assets/img/positions/pos1.webp'
+import pos2 from '@/assets/img/positions/pos2.webp'
+import pos3 from '@/assets/img/positions/pos3.webp'
+import selector from '@/assets/img/selector.svg'
+import close from '@/assets/img/close.svg'
+import serv_mobile from '@/assets/img/srvices_mobile.svg'
 import privacy_page from '@/components/privacy_page.vue'
-import Cokie_page from "@/components/cokie_page.vue";
-import terms_page from "@/components/terms_page.vue";
+import Cokie_page from '@/components/cokie_page.vue'
+import terms_page from '@/components/terms_page.vue'
 
 export default {
   components: {
@@ -258,11 +273,11 @@ export default {
     terms_page,
   },
   mounted() {
-    window.addEventListener('hashchange', this.checkHash);
-    this.checkHash(); // check the initial hash
+    window.addEventListener('hashchange', this.checkHash)
+    this.checkHash() // check the initial hash
   },
   beforeUnmount() {
-    window.removeEventListener('hashchange', this.checkHash);
+    window.removeEventListener('hashchange', this.checkHash)
   },
   data() {
     return {
@@ -295,53 +310,53 @@ export default {
       serv_mobile,
       privacy_page,
       Cokie_page,
-    };
+    }
   },
   methods: {
     move_in_menu() {
-      document.getElementById('menu_elements_mobile').classList.remove("move_out_menu");
-      document.getElementById('menu_elements_mobile').classList.add("move_in_menu");
+      document.getElementById('menu_elements_mobile').classList.remove('move_out_menu')
+      document.getElementById('menu_elements_mobile').classList.add('move_in_menu')
     },
     move_out_menu() {
-      document.getElementById('menu_elements_mobile').classList.remove("move_in_menu");
-      document.getElementById('menu_elements_mobile').classList.add("move_out_menu");
+      document.getElementById('menu_elements_mobile').classList.remove('move_in_menu')
+      document.getElementById('menu_elements_mobile').classList.add('move_out_menu')
     },
     main_page() {
-      document.getElementById('main_page').style.display = "block";
-      document.getElementById('privacy').style.display = "none";
-      document.getElementById('cokie_page').style.display = "none";
-      document.getElementById('terms_page').style.display = "none";
+      document.getElementById('main_page').style.display = 'block'
+      document.getElementById('privacy').style.display = 'none'
+      document.getElementById('cokie_page').style.display = 'none'
+      document.getElementById('terms_page').style.display = 'none'
     },
     privacy() {
-      document.getElementById('main_page').style.display = "none";
-      document.getElementById('privacy').style.display = "block";
-      document.getElementById('cokie_page').style.display = "none";
-      document.getElementById('terms_page').style.display = "none";
+      document.getElementById('main_page').style.display = 'none'
+      document.getElementById('privacy').style.display = 'block'
+      document.getElementById('cokie_page').style.display = 'none'
+      document.getElementById('terms_page').style.display = 'none'
     },
     cookies() {
-      document.getElementById('main_page').style.display = "none";
-      document.getElementById('privacy').style.display = "none";
-      document.getElementById('cokie_page').style.display = "block";
-      document.getElementById('terms_page').style.display = "none";
+      document.getElementById('main_page').style.display = 'none'
+      document.getElementById('privacy').style.display = 'none'
+      document.getElementById('cokie_page').style.display = 'block'
+      document.getElementById('terms_page').style.display = 'none'
     },
     terms() {
-      document.getElementById('main_page').style.display = "none";
-      document.getElementById('privacy').style.display = "none";
-      document.getElementById('cokie_page').style.display = "none";
-      document.getElementById('terms_page').style.display = "block";
+      document.getElementById('main_page').style.display = 'none'
+      document.getElementById('privacy').style.display = 'none'
+      document.getElementById('cokie_page').style.display = 'none'
+      document.getElementById('terms_page').style.display = 'block'
     },
     checkHash() {
       if (window.location.hash === '#privacy') {
-        this.privacy();
+        this.privacy()
       }
       if (window.location.hash === '#cokie_page') {
-        this.cookies();
+        this.cookies()
       }
       if (window.location.hash === '#terms_page') {
-        this.terms();
+        this.terms()
       }
     },
-  }
+  },
 }
 </script>
 
@@ -530,7 +545,14 @@ export default {
 
 #section8
   background-color rgba(0, 0, 0, 1)
-  height 260rem
+  min-height 260rem
+  padding-bottom 48rem
+  box-sizing border-box
+  overflow visible
+
+#section8 .section_content
+  height auto
+  min-height 0
 
 
 .section_content
@@ -764,7 +786,28 @@ export default {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  top: 67rem;
+  margin-top: 67rem;
+
+.footer_legal
+  position relative
+  width 100%
+  margin-top 48rem
+  padding-top 8rem
+
+
+.footer_legal__line
+  margin 0
+  margin-bottom 10rem
+  color rgba(255, 255, 255, 0.62)
+  font-size 12rem
+  font-style normal
+  font-weight 400
+  line-height 150%
+  font-family 'Inter', sans-serif
+  text-align left
+
+.footer_legal__line:last-child
+  margin-bottom 0
 
 a
   text-decoration none
@@ -977,7 +1020,9 @@ a
     margin-top 50rem
 
   #section8
-    height 340rem !important
+    min-height 340rem
+    height auto !important
+    padding-bottom 56rem
     margin-bottom 0
 
   #section8 .section_content
@@ -986,7 +1031,16 @@ a
   .footer_elements
     flex-direction: column;
     align-items: center;
-    height 200rem
+    height auto
+    min-height 0
+    gap 16rem
+
+  .footer_legal
+    margin-top 40rem
+    padding-top 24rem
+
+  .footer_legal__line
+    text-align center
 
   .center_balls
     top 40rem
@@ -1004,7 +1058,4 @@ a
     display none
   .section1_margin1
     max-width 320rem
-
-
-
 </style>

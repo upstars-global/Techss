@@ -7,41 +7,37 @@ module.exports = defineConfig({
   configureWebpack: {
     output: {
       filename: 'js/[name].[contenthash:8].js',
-      chunkFilename: 'js/[name].[contenthash:8].js'
+      chunkFilename: 'js/[name].[contenthash:8].js',
     },
     module: {
       rules: [
         {
           test: /\.styl(us)?$/,
-          use: [
-            'stylus-loader'
-          ]
-        }
-      ]
+          use: ['stylus-loader'],
+        },
+      ],
     },
     plugins: [
       new CompressionWebpackPlugin({
         test: /\.(svg|js|css)$/,
         algorithm: 'brotliCompress',
-        minRatio: 0.8
-      })
-    ]
+        minRatio: 0.8,
+      }),
+    ],
   },
   chainWebpack: config => {
-    // CSS с contenthash
-    config.plugin('extract-css').tap(args => {
-      args[0].filename = 'css/[name].[contenthash:8].css'
-      args[0].chunkFilename = 'css/[name].[contenthash:8].css'
-      return args
-    })
-    
-    // Изображения с contenthash
-    config.module
-      .rule('images')
-      .set('generator', {
-        filename: 'img/[name].[contenthash:8][ext]'
+    // extract-css только в production; в dev плагина нет — иначе .tap() падает
+    if (config.plugins.has('extract-css')) {
+      config.plugin('extract-css').tap(args => {
+        args[0].filename = 'css/[name].[contenthash:8].css'
+        args[0].chunkFilename = 'css/[name].[contenthash:8].css'
+        return args
       })
-  }
+    }
+
+    // Изображения с contenthash
+    config.module.rule('images').set('generator', {
+      filename: 'img/[name].[contenthash:8][ext]',
+    })
+  },
 })
-
-
