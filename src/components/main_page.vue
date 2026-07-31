@@ -38,37 +38,25 @@
     </div>
     <a
       href="#section2"
-      @click="
-        move_out_menu()
-        main_page()
-      "
+      @click="closeMobileNavAndShowMain"
     >
       <div class="menu_element">About</div>
     </a>
     <a
       href="#section3"
-      @click="
-        move_out_menu()
-        main_page()
-      "
+      @click="closeMobileNavAndShowMain"
     >
       <div class="menu_element">Advantages</div>
     </a>
     <a
       href="#section5"
-      @click="
-        move_out_menu()
-        main_page()
-      "
+      @click="closeMobileNavAndShowMain"
     >
       <div class="menu_element">Services</div>
     </a>
     <a
       href="#section6"
-      @click="
-        move_out_menu()
-        main_page()
-      "
+      @click="closeMobileNavAndShowMain"
     >
       <div class="menu_element">Vacancy</div>
     </a>
@@ -332,6 +320,10 @@ export default {
     move_out_menu() {
       document.getElementById('menu_elements_mobile').classList.remove('move_in_menu')
       document.getElementById('menu_elements_mobile').classList.add('move_out_menu')
+    },
+    closeMobileNavAndShowMain() {
+      this.move_out_menu()
+      this.main_page()
     },
     main_page() {
       document.getElementById('main_page').style.display = 'block'
