@@ -20,6 +20,9 @@
         <a href="#section5" @click="main_page">
           <div class="menu_element">Services</div>
         </a>
+        <a href="#section_management" @click="main_page">
+          <div class="menu_element">Management</div>
+        </a>
         <a href="#section6" @click="main_page">
           <div class="menu_element">Vacancy</div>
         </a>
@@ -55,6 +58,12 @@
       <div class="menu_element">Services</div>
     </a>
     <a
+      href="#section_management"
+      @click="closeMobileNavAndShowMain"
+    >
+      <div class="menu_element">Management</div>
+    </a>
+    <a
       href="#section6"
       @click="closeMobileNavAndShowMain"
     >
@@ -85,7 +94,7 @@
             The Top-Notch Software DevOps and Digital <br class="br_desktop" />
             Marketing Solutions from Techss
           </div>
-          <a href="mailto:info@techss.com">
+          <a href="mailto:ads@techssltd.com">
             <img :src="button1" class="button1 section1_margin2" alt="" />
           </a>
         </div>
@@ -175,17 +184,32 @@
           <v-lazy-image :src="serv_mobile" class="srvices_mobile" alt="" />
         </div>
       </div>
+      <div id="section_management" class="section">
+        <div class="section_content">
+          <div class="h1 section5_center">Management</div>
+          <div class="management_list">
+            <div class="management_card">
+              <v-lazy-image :src="mgmt_icon" class="management_card__icon" alt="" />
+              <div class="management_card__text">
+                <div class="management_card__role">Director</div>
+                <div class="management_card__name">Nasia Papavasileiou</div>
+              </div>
+            </div>
+          </div>
+          <v-lazy-image :src="mgmt_balls" class="management_balls" alt="" />
+        </div>
+      </div>
       <div id="section6" class="section">
         <div class="section_content">
           <div class="h1 section5_center">Open positions</div>
           <div class="positions_row">
-            <a href="mailto:info@techss.com">
+            <a href="mailto:ads@techssltd.com">
               <v-lazy-image :src="pos1" class="pos" alt="" />
             </a>
-            <a href="mailto:info@techss.com">
+            <a href="mailto:ads@techssltd.com">
               <v-lazy-image :src="pos2" class="pos" alt="" />
             </a>
-            <a href="mailto:info@techss.com">
+            <a href="mailto:ads@techssltd.com">
               <v-lazy-image :src="pos3" class="pos" alt="" />
             </a>
           </div>
@@ -196,7 +220,7 @@
         <v-lazy-image :src="center_balls" class="center_balls_mobile" alt="" />
         <div class="section_content">
           <div class="h1 section7_width">Run a tight ship, and Techss will component the rest</div>
-          <a href="mailto:info@techss.com">
+          <a href="mailto:ads@techssltd.com">
             <img :src="button1" class="button1 section7_margin1" alt="" />
           </a>
         </div>
@@ -214,7 +238,7 @@
     <footer id="section8" class="section">
       <div class="section_content">
         <div class="footer_elements">
-          <div class="h3">Contacts: <a href="mailto:info@techss.com">info@techss.com </a></div>
+          <div class="h3">Contacts: <a href="mailto:ads@techssltd.com">ads@techssltd.com </a></div>
           <div @click="privacy()" class="h3"><a href="#privacy">Privacy Policy</a></div>
           <div @click="cookies()" class="h3"><a href="#cokie_page">Cookies</a></div>
           <div @click="terms()" class="h3"><a href="#terms_page">Terms & Conditions</a></div>
@@ -258,6 +282,8 @@ import srvices from '@/assets/img/srvices.svg'
 import pos1 from '@/assets/img/positions/pos1.webp'
 import pos2 from '@/assets/img/positions/pos2.webp'
 import pos3 from '@/assets/img/positions/pos3.webp'
+import mgmt_icon from '@/assets/img/management/mgmt_icon.webp'
+import mgmt_balls from '@/assets/img/management/mgmt_balls.webp'
 import selector from '@/assets/img/selector.svg'
 import close from '@/assets/img/close.svg'
 import serv_mobile from '@/assets/img/srvices_mobile.svg'
@@ -305,6 +331,8 @@ export default {
       pos1,
       pos2,
       pos3,
+      mgmt_icon,
+      mgmt_balls,
       selector,
       close,
       serv_mobile,
@@ -401,13 +429,14 @@ export default {
   align-items: center;
 }
 
-.menu_elements
+.top_menu .menu_elements
   position relative
   top 0
   left 0
   display flex
-  width 551rem
-  justify-content space-between
+  width auto
+  gap 40rem
+  justify-content flex-end
   align-items center
   cursor pointer
 
@@ -501,9 +530,9 @@ export default {
   aspect-ratio: 181 / 188;
   z-index: 5;
 
-.bottom_center_balls
+#main_page .bottom_center_balls
   position: absolute;
-  top: 2695rem;
+  top: 2958rem;
   left: 50%;
   transform: translate(-1%);
   width: auto;
@@ -539,6 +568,9 @@ export default {
 
 #section5
   height 304rem
+
+#section_management
+  height 263rem
 
 #section6
   height 448rem
@@ -749,6 +781,60 @@ export default {
   top 65rem
   left 0
 
+.management_list
+  position relative
+  margin-top 32rem
+  display flex
+  flex-direction column
+  gap 16rem
+
+.management_card
+  position relative
+  display flex
+  align-items center
+  gap 24rem
+  padding 32rem
+  border-radius 20rem
+  background-color #212121
+  box-sizing border-box
+
+.management_card__icon
+  width 32rem
+  height 32rem
+  flex-shrink 0
+
+.management_card__text
+  display flex
+  flex 1 1 0
+  min-width 0
+  flex-direction column
+  align-items flex-start
+  gap 4rem
+  text-align left
+
+.management_card__role
+  font-family 'Inter', sans-serif
+  font-size 14rem
+  font-weight 400
+  line-height 150%
+  color #c2c2c2
+
+.management_card__name
+  font-family 'Inter', sans-serif
+  font-size 24rem
+  font-weight 900
+  line-height 150%
+  color #ffffff
+
+.management_balls
+  position absolute
+  top 170rem
+  left 880rem
+  width 238rem
+  height 185rem
+  pointer-events none
+  z-index 2
+
 .positions_row
   position relative
   top 23rem
@@ -869,13 +955,14 @@ a
   .hamburger_menu
     display block
 
-  .menu_elements
+  .top_menu .menu_elements
     display none
 
-  .menu_elements_mobile
+  #menu_elements_mobile
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(8rem);
-    height: 443rem;
+    height: auto;
+    padding-bottom: 24rem;
     width: 255rem;
     position: fixed;
     right: -255rem;
@@ -1002,6 +1089,16 @@ a
 
   .pos
     margin-bottom 30rem
+
+  .management_balls
+    display none
+
+  .management_list
+    width 100%
+
+  .management_card
+    align-items flex-start
+    width 100%
 
   .pos:hover
     top 10rem
